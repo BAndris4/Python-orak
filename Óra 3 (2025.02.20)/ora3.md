@@ -349,8 +349,8 @@ Irodalom Hetfo 09:50 10:35 Nagy Eva
         print(f"Összesen {len(adatok)} óra van egy héten")
         ```
 
-    > [!IMPORTANT]
-    > A `len(adatok)` pont az órák számát fogja kiiratni, általában ilyen szokott lenni az első feladat.
+> [!IMPORTANT]
+> A `len(adatok)` pont az órák számát fogja kiiratni, általában ilyen szokott lenni az első feladat.
 
 2. Irassuk ki a szerdai órákat, és számoljuk meg őket!
     ```python
@@ -413,8 +413,8 @@ Irodalom Hetfo 09:50 10:35 Nagy Eva
 
         print(f"Összesen {len(targyak)} különböző tárgy van: {", ".join(targyak)}")
         ```
-    > [!NOTE]
-    > Lehet mindkettőt használni, a halmazos akkor jobb ha egyféle adat van.
+> [!NOTE]
+> Lehet mindkettőt használni, a halmazos akkor jobb ha egyféle adat van.
 ## Fájlbaírás
 - Ha írni akarunk egy fájlba ugyanúgy az `open()` függvényt használjuk
     
@@ -422,8 +422,8 @@ Irodalom Hetfo 09:50 10:35 Nagy Eva
     f = open("kimenet.txt", "w")
     ```
     
-    > [!IMPORTANT]
-    > Ha nem létezik a `kimenet.txt` akkor automatikusan létrehozódik. Ha pedig van benne valami, akkor a benne lévő tartalom törlődik.
+> [!IMPORTANT]
+> Ha nem létezik a `kimenet.txt` akkor automatikusan létrehozódik. Ha pedig van benne valami, akkor a benne lévő tartalom törlődik.
 - Ezután a fájlba az `f.write()` paranccsal tudunk írni. Például:
 
     ```python
@@ -434,11 +434,10 @@ Irodalom Hetfo 09:50 10:35 Nagy Eva
     f.close()
     ```
 
-    > [!WARNING]
-    > Az `f.write` nem fog automatikusan sortörést tenni, ezért nekünk a végére kell tenni egy `\n` karaktert. Tehát a fájl tartalma így:
-    ```
+> [!WARNING]
+> Az `f.write` nem fog automatikusan sortörést tenni, ezért nekünk a végére kell tenni egy `\n` karaktert. Tehát a fájl tartalma így:
+
     almabanáncitrom
-    ```
 
 ### Feladatok
 - Írjuk egy fájlba a szorzótáblát.
@@ -473,8 +472,8 @@ A `diakok.txt` diákok adatai találhatóak. Egy diák adata az alábbiakból á
 1. Olvasd be a `diakok.txt` fájl, és irasd ki hány diák szerepel a fájlban.
 2. Irasd ki a legidősebb diákok nevét.
     
-    > [!TIP]
-    > Ide kell egy maximum keresés, és miután megvan az alapján kiiratod azokat, akiknek az életkora megegyezik a maximum életkorral
+> [!TIP]
+> Ide kell egy maximum keresés, és miután megvan az alapján kiiratod azokat, akiknek az életkora megegyezik a maximum életkorral
 
 3. Készíts egy függvényt, amely egy osztály nevét kapja bemenetként, és visszaadja annak évfolyamát. Például:
     ```python
