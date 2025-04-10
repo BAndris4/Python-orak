@@ -518,3 +518,53 @@ Biro Richard 10.B
 Kallai Bettina 10.A
 Zentai Gergo 10.B
 ```
+
+## Házi megoldása (2025.03.05)
+1. Olvasd be a `diakok.txt` fájl, és irasd ki hány diák szerepel a fájlban.
+2. Irasd ki a legidősebb diákok nevét.
+3. Készíts egy függvényt, amely egy osztály nevét kapja bemenetként, és visszaadja annak évfolyamát.
+4. Írd ki a 10. évfolyamos diákok nevét, felhasználva a `evfolyam(osztaly)` függvényt.
+5. A `jo_tanulok.txt` fájlba írd be azoknak a diákoknak a nevét és életkorát, akiknek jegyátlaguk meghaladja a 4.0-át.
+```python
+# 1. feladat
+f = open("diakok.txt", "r")
+adatok = []
+for sor in f:
+    adatok.append(sor.strip().split())
+f.close()
+
+print(f"Összesen {len(adatok)} diák szerepel az adatbázisban.")
+
+# 2. feladat
+maximum = int(adatok[0][2])
+for i in range(len(adatok)):
+    if int(adatok[i][2]) > maximum:
+        maximum = int(adatok[i][2])
+
+print("Legidősebb diákok: ")
+for i in range(len(adatok)):
+    if int(adatok[i][2]) == maximum:
+        print(f"{adatok[i][0]} {adatok[i][1]}")
+
+# 3. feladat
+def evfolyam(osztaly):
+    ev = osztaly.split(".")[0]
+    return ev
+
+
+# print(evfolyam("10.A")) # 10
+# print(evfolyam("5.B")) # 5
+
+
+# 4. feladat
+print("\n10. évfolyamos diákok: ")
+for i in range(len(adatok)):
+    if evfolyam(adatok[i][3]) == "10":
+        print(f"{adatok[i][0]} {adatok[i][1]} {adatok[i][3]}")
+
+# 5. feladat
+f = open("jo_tanulok.txt", "w")
+for i in range(len(adatok)):
+    if float(adatok[i][4])>4:
+        f.write(f"{adatok[i][0]} {adatok[i][1]} {adatok[i][2]}\n")
+```
