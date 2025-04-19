@@ -104,8 +104,6 @@ FROM konyv
 WHERE tema in ('sci-fi', 'krimi', 'horror');
 ```
 
-### Listázzuk a győri tagokat. Rendezzük besorolás, azon belül pedig teljes név szerint.
-
 ## `LIKE` használata
 ### Listázzuk az `A` betűvel kezdődő könyvcímeket.
 ```sql
@@ -157,7 +155,7 @@ WHERE cim LIKE '%a%a%' AND cim NOT LIKE '%a%a%a%';
 SELECT *
 FROM tag
 WHERE cim LIKE '____ Győr,%'
-ORDER BY besorolas , vezeteknev, keresztnev;
+ORDER BY besorolas, vezeteknev, keresztnev;
 ```
 
 > [!NOTE]
