@@ -1,4 +1,4 @@
-## Épitményadó (2021. május idegen nyelvű)
+## Bányató (2021. május idegen nyelvű)
 
 ### Feladat: [link](banyato_prog.pdf)
 ### Forrás: [link](melyseg-banya.txt)
